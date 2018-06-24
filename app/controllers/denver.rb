@@ -10,3 +10,8 @@ class Denver
       error
     end
   end
+
+  def self.index
+    render_view('index.html')
+  end
+end
