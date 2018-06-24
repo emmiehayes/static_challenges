@@ -15,6 +15,10 @@ class Denver
     render_view('index.html')
   end
 
+   def self.error
+    ['404', {'Content-Type' => 'text/html'}, [File.read('./app/views/error.html')]]
+  end
+
   def self.render_view(page, code = '200')
   [code, {'Content-Type' => 'text/html'}, [File.read("./app/views/#{page}")]]
   end
