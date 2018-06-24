@@ -1,3 +1,44 @@
-body {
-      background: gray;
+body{
+    background: white;
+    font-family: 'Arial', sans-serif;
+}
+
+header{
+      font-size: 15px;
+      background-color: DarkRed;
+      color: white;
+      padding: 5px 10px;
+      margin: 0px 0px;
+}
+
+nav{
+    background-color: #282828;
+    padding: 12px 19px;
+    text-align: right
+}
+
+a{
+  color: white;
+  font-size: 12px;
+  margin: 5px 5px;
+}
+
+figure img{
+          float: left;
+          width: 80%;
+          margin: 0px 0px;
+}
+
+
+content img{
+  float: right;
+  width: 20%;
+  padding: 12px
+}
+
+
+h4{
+  align-content: left;
+  width: 80%
+  
 }
