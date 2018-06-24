@@ -1,2 +1,12 @@
+require 'rack'
+
 class Denver
-end
+  def self.call(env)
+    case env["PATH_INFO"]
+    when '/'         then index.html
+    when '/index'    then about
+    when '/main.css' then css
+    else
+      error
+    end
+  end
